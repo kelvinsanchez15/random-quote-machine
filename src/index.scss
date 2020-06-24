@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap");
+
+html,
+body {
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  font-family: "Bitter", serif;
+  color: rgb(48, 37, 18);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  overflow: hidden;
+  display: block;
+}
+
+h1 {
+  margin: auto;
+  padding: 25px 25px 10px 25px;
+  font-size: 2.5vw;
+  text-align: end;
+}
+
+h2 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+#quote-box {
+  border-radius: 45px 15px 45px 15px;
+  -moz-border-radius: 45px 15px 45px 15px;
+  -webkit-border-radius: 45px 15px 45px 15px;
+  border: 0px solid #000000;
+  background-color: rgba(253, 255, 255, 0.473);
+  position: absolute;
+  min-width: 65%;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
+  -moz-box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
+  box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 8vw;
+  text-align: justify;
+  p {
+    font-size: 2vw;
+  }
+}
+
+
+
+#tweet-quote {
+  transition: ease 0.3s;
+}
+
+#tweet-quote:hover {
+  color: #239bca;
+  cursor: pointer;
+}
+
+#new-quote {
+  transition: ease 0.3s;
+}
+
+#new-quote:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  #quote-box {
+    min-width: 90%;
+    max-width: 100%;
+  }
+  .buttons {
+    font-size: 12vw;
+  }
+}
