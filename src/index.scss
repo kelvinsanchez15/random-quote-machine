@@ -26,10 +26,6 @@ h2 {
 }
 
 #quote-box {
-  border-radius: 45px 15px 45px 15px;
-  -moz-border-radius: 45px 15px 45px 15px;
-  -webkit-border-radius: 45px 15px 45px 15px;
-  border: 0px solid #000000;
   background-color: rgba(253, 255, 255, 0.473);
   position: absolute;
   min-width: 65%;
@@ -37,6 +33,10 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 45px 15px 45px 15px;
+  -moz-border-radius: 45px 15px 45px 15px;
+  -webkit-border-radius: 45px 15px 45px 15px;
+  border: 0px solid #000000;
   -webkit-box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
   -moz-box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
   box-shadow: 8px 11px 24px -7px rgba(99, 95, 87, 0.87);
@@ -45,31 +45,34 @@ h2 {
 .buttons {
   display: flex;
   justify-content: space-around;
-  font-size: 8vw;
   text-align: justify;
-  p {
-    font-size: 2vw;
-  }
+  align-items: center;
+  color: rgba(48, 37, 18, 0.9);
 }
 
-
-
 #tweet-quote {
+  display: inline-block;
+  color: inherit;
   transition: ease 0.3s;
+  font-size: 5vw;
 }
 
 #tweet-quote:hover {
-  color: #239bca;
   cursor: pointer;
+  color: #239bca;
+  transform: scale(1.1, 1.1);
 }
 
 #new-quote {
   transition: ease 0.3s;
+  font-size: 10vw;
+  transform: rotate(90deg);
 }
 
 #new-quote:hover {
-  transform: rotate(360deg);
   cursor: pointer;
+  color: rgba(48, 37, 18, 1);
+  transform: rotate(90deg) scale(1.1, 1.1);
 }
 
 @media (max-width: 1024px) {
@@ -83,7 +86,10 @@ h2 {
     min-width: 90%;
     max-width: 100%;
   }
-  .buttons {
-    font-size: 12vw;
+  #tweet-quote {
+    font-size: 10vw;
+  }
+  #new-quote {
+    font-size: 15vw;
   }
 }

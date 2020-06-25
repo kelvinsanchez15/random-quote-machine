@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { FaRedoAlt } from "react-icons/fa";
+import { TiArrowSync } from "react-icons/ti";
 import { FaQuoteLeft } from "react-icons/fa";
 import "./index.scss";
 
@@ -56,14 +56,25 @@ class App extends Component {
             </div>
             <div className="buttons">
               <div>
-                <AiFillTwitterCircle id="tweet-quote" title="Tweet this quote!" />
+                <a
+                  href={
+                    "https://twitter.com/intent/tweet?text=" +
+                    `${quote}%0a${author}`
+                  }
+                  id="tweet-quote"
+                  title="Tweet this quote!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillTwitterCircle />
+                </a>
               </div>
-              <div>
-                <FaRedoAlt
-                  id="new-quote"
-                  title="Get a new quote!"
-                  onClick={this.getNewQuote}
-                />
+              <div
+                id="new-quote"
+                title="Get a new quote!"
+                onClick={this.getNewQuote}
+              >
+                <TiArrowSync />
               </div>
             </div>
           </div>
