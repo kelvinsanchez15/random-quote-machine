@@ -59,7 +59,7 @@ class App extends Component {
                 <a
                   href={
                     "https://twitter.com/intent/tweet?text=" +
-                    `${quote}%0a${author}`
+                    `"${quote}"%0a- ${author}`
                   }
                   id="tweet-quote"
                   title="Tweet this quote!"

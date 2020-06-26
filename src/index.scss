@@ -21,7 +21,7 @@ body {
   background-color: rgba(253, 255, 255, 0.7);
   position: absolute;
   min-width: 65%;
-  max-width: 100%;
+  max-width: 100%;  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,11 +36,19 @@ box-shadow: 5px 5px 32px 0px rgba(0,0,0,0.08);
     min-width: 85%;
   }
 
-  #text h1 {
+  #text {    
+    min-height: 50vh;
+    display: flex;    
+    @media (orientation: portrait) {
+      min-height: 17vh;
+    }   
+  }
+
+  #text h1 {    
     margin: auto;
     padding: 25px 25px 10px 25px;
     font-size: 2.5vw;
-    text-align: end;
+    text-align: end;  
   }
 
   #author h2 {
