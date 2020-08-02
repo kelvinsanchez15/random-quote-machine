@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![FireShot Capture 038 - Random Quote Machine - kelvinsanchez15 github io](https://user-images.githubusercontent.com/4708484/89128537-50a6ab00-d4c4-11ea-84c6-b2ab236de8f5.png)
+![FireShot Capture 038 - Random Quote Machine - kelvinsanchez15 github io](https://user-images.githubusercontent.com/4708484/89128589-b430d880-d4c4-11ea-8dbb-6a08de1bf771.png)
 
 ## Additional Dependencies
 
