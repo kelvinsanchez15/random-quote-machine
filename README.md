@@ -4,6 +4,10 @@
 
 [Random Quote Machine](https://kelvinsanchez15.github.io/random-quote-machine/)
 
+## Screenshot
+
+![FireShot Capture 038 - Random Quote Machine - kelvinsanchez15 github io](https://user-images.githubusercontent.com/4708484/89128537-50a6ab00-d4c4-11ea-84c6-b2ab236de8f5.png)
+
 ## Additional Dependencies
 
 - [Axios](https://github.com/axios/axios).
